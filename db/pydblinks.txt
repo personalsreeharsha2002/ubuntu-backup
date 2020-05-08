@@ -1,0 +1,40 @@
+Items to explore
+	Pylint, PEP8
+
+Unit testing
+	https://docs.python.org/3/library/unittest.html
+	https://nose.readthedocs.io/en/latest/
+
+Code review tools
+	https://www.codacy.com/
+	https://scan.coverity.com/
+	
+Libraries / framework - Django, Scikit, Pandas	
+	
+https://medium.com/@shashvatshukla/framework-vs-library-vs-platform-vs-api-vs-sdk-vs-toolkits-vs-ide-50a9473999db
+
+https://stackoverflow.com/questions/8772746/difference-between-framework-vs-library-vs-ide-vs-api-vs-sdk-vs-toolkits
+
+https://www.gamefromscratch.com/post/2015/06/13/GameDev-Glossary-Library-Vs-Framework-Vs-Engine.aspx
+
+https://github.com/geekcomputers/Python
+https://github.com/zhiwehu/Python-programming-exercises
+https://github.com/swsoyee/Beginner-Python-exercises
+https://github.com/topics/python-exercises
+https://github.com/topics/python-programming-exercises
+https://github.com/PabloVallejo/python-exercises
+
+
+https://www.programiz.com/python-programming/tutorial
+https://www.learnpython.org/
+https://www.tutorialspoint.com/python/index.htm
+https://www.w3schools.com/Python/default.asp
+https://www.slideshare.net/ShivamGupta276/python-seminar-ppt
+https://www.tutorialspoint.com/python/index.htm
+https://www.learnpython.org/
+https://www.programiz.com/python-programming/tutorial
+http://www.cs.toronto.edu/~quellan/courses/summer11/csc108/lectures.shtml
+
+https://dbader.org/blog/meaning-of-underscores-in-python
+
+https://api.github.com/

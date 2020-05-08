@@ -1,0 +1,269 @@
+.nav-link
+{
+  text-align: left;
+}
+.nav-link:hover
+{
+    font-family: 'Molle', cursive;
+    background-color: rgb(227, 247, 46);
+    transform: scale(1.12,1.12);
+}
+.navbar-brand{
+  font-family: 'Galada', cursive;
+    
+    font-size: 5vh;
+    
+}
+.navbar-brand:hover{
+  
+  font-family: 'Bowlby One SC', cursive;
+  background-color: burlywood;
+}
+.center
+{
+    text-align: center;
+    
+}
+.center a:hover{
+    transform: scale(1.2,1.2);
+}
+h1{
+    padding-left: 4vh;
+    padding-right: 4vh;
+    font-family: 'Bangers', cursive;
+    
+}
+h2{
+    padding-left: 4vh;
+    padding-right: 4vh;
+    font-family: 'Bangers', cursive;
+    
+}
+
+p{
+    
+    padding-left: 4vh;
+    padding-right: 4vh;
+    font-size: 3vh;
+    font-family: 'Roboto Slab', serif;
+}
+li
+{
+  margin-left: 2vh;
+  font-size: 3vh;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+body{
+     /* background-color: beige; */
+     height: 500px;
+      background-color: grey; /* For browsers that do not support gradients */
+      background-image: radial-gradient(#e6ebef, #1c87c9, #8ebf42);
+      
+
+}
+.wid{
+ text-align: center;
+
+}
+.widt
+{
+width: 80vh;
+
+}
+.sma
+{
+    width: 75vh;
+}
+.mar
+{
+    margin-top: 0vh;
+    margin-bottom: 2vh;
+}
+.flow{
+    float: right;
+}
+
+table  {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: auto;
+    width: 50vh;
+    border: 1px solid black;
+    padding-left: 10vh;
+    padding-right: 10vh;
+            
+  }
+  
+  th, td {
+      
+      border: 1px solid black;
+    text-align: left;
+    padding: 1vh;
+    font-family: 'Chewy', cursive;
+    font-size: 3vh;
+
+  }
+  td:hover{
+      background-color: rgb(132, 141, 223);
+      font-family: 'Bowlby One SC', cursive;
+
+  }
+  th{
+    background-color: rgb(11, 165, 236);
+    
+  }
+  
+  tr:nth-child(even){background-color: #cdeec3}
+  tr:nth-child(odd){background-color: rgb(203, 223, 236);}
+.bot
+{
+    position: absolute !important;
+    right: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+
+}
+.footer{
+    text-align: left;
+    width:100vw;
+    position:fixed ;
+
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+.container-fluid{
+    text-align: center;
+}
+@media (max-width: 842px  )
+{
+    .footer img {
+        transform: scale(0.45,0.45);
+        padding: 0;
+    }
+        
+    .footer{
+       padding: 0;
+    
+    }
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 2vh;
+    right: 3vh;
+    z-index: 99;
+    font-size: 2vh;
+    border: none;
+    outline: none;
+    background-color: rgb(91, 61, 221);
+    color: white;
+    cursor: pointer;
+    padding: 2vh;
+    border-radius: 3vh;
+  }
+  
+  #myBtn:hover {
+    background-color: rgb(24, 6, 6);
+    transform: scale(1.12,1.12);
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .butt
+  {
+   text-align: center;
+     }
+  h3{
+    font-family: 'Bowlby One SC', cursive;
+    
+  }
+  h3:hover{
+    font-family: 'Chewy', cursive;
+    font-size: 4vh;
+  }
+  .visit
+  {
+      background-color: rgb(212, 56, 45);
+      color: rgb(223, 236, 236);
+      font-size: 4vh;
+      margin-left:30vw;
+      margin-right: 30vw;
+      text-align: center;
+     
+     
+  }
+  .home
+  {
+    font-family: 'Molle', cursive;
+    font-size: 4vh;
+  }
+  .profile
+  {
+    font-family: 'Molle', cursive;
+    font-size: 4vh;
+  }
+  .contact
+  {
+    font-family: 'Molle', cursive;
+    font-size: 4vh;
+  }
+  .tour
+  {
+    font-family: 'Molle', cursive;
+    font-size: 4vh;
+  }
+  .fon
+  {
+    background-color: blue;
+    border-radius: 2vh;
+    font-family: 'Chewy', cursive;
+    color:black;
+    font-size: 3vh;
+  }
+  .toor
+  {
+    width: 40vw;
+  }
+  .pad
+  {
+    padding-top: 5vh;
+  }
+  .foo
+  {
+    font-family: 'Bowlby One SC', cursive;
+    color:rgb(0, 0, 0) ;
+  }
+  .foo:hover{
+    font-family: 'Merriweather Sans', sans-serif;
+    transform: scale(1.07,1.07);
+
+  }
+  .ico:hover{
+    transform:scale(1.12,1.12);
+  }
+  .comm
+  {
+    color:black;
+    font-family: 'Chewy', cursive;
+    font-size: 3vh;
+  }
+  .aref
+  {
+    color: brown;
+    font-family: 'Bowlby One SC', cursive;
+  }
+  .aref:hover{
+    color: black;
+    font-family: 'Chewy', cursive;
+    
+  }
+
+
+/* font-family: 'Merriweather Sans', sans-serif;
+font-family: 'Bowlby One SC', cursive; */

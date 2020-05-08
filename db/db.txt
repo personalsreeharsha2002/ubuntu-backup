@@ -1,0 +1,164 @@
+Normalization Rules
+	1st..3rd 
+		https://support.microsoft.com/en-in/help/283878/description-of-the-database-normalization-basics
+
+Why Database
+	ACID - Atomicity, Consistency, Isolation, Durability
+		Similar to the example we discussed in the class --> https://beginnersbook.com/2015/04/acid-properties-in-dbms/
+
+	Integrity
+		https://database.guide/what-is-referential-integrity/
+		We also discussed about CHECKSUM (https://en.wikipedia.org/wiki/Checksum)
+
+	Concurrency
+		We just touchbased as multiple operations happening at the same..
+		More reading -- https://www.guru99.com/dbms-concurrency-control.html
+	MultiUser
+		
+	Persistence
+		Genesis of DB. Data being available in secondary storage.. It may be worth reading about SSD, Tapes, Disks. Current trend is SSD.
+		Data being managed in a distributed environment..role of network can be explored.
+		Storage Area Network, Network Access storage.. new concept Ceph - Software Defined Storage..
+	Security
+		Confidentiality, Integrity and Availability.
+		Personally Identifiable Information
+		Importance of Privacy Data Protection...act coming up in India.  GDPR is the latest European trend on privacy protection
+
+Some more theory
+	Models, ER
+		Data Flow diagram - Part of Functional specs activity. https://medium.com/@warren2lynch/data-flow-diagram-comprehensive-guide-with-examples-d9858387f25e
+			The importance of standard notation comes up across software engineering so that multiple teams and multiple people can easily communicate.
+		ER - Entity Relationship diagram. One of the popular tools is Erwin --> https://erwin.com/products/erwin-data-modeler/		
+	
+	Recollect 9 and 10th class Maths
+		Set Theory
+		Catesian - m*n
+		Cardinality
+			High/Low
+			1-1,1-*,*-*
+	
+Database
+	File
+		https://www.howtogeek.com/196051/htg-explains-what-is-a-file-system-and-why-are-there-so-many-of-them/
+	Hierarchical
+		https://www.tutorialspoint.com/ims_db/ims_db_structure.htm
+	Network
+		IDMS was one of the popular Network databases. Popularized by CA, now called as Broadcom. https://www.broadcom.com/products/mainframe/databases/ca-idms
+		https://mariadb.com/kb/en/understanding-the-network-database-model/
+	DBMS
+		https://www.javatpoint.com/dbms-tutorial
+	Relational DBMS
+		https://docs.oracle.com/cd/E11882_01/server.112/e40540/intro.htm#CNCPT88785
+	OO RDBMS
+				
+
+Database Engine and Schema
+		Fun tracking ---> https://db-engines.com/en/ranking
+	SGA
+		SGA term is more relevant to Oracle. All Database engines have something like this for memory management
+		https://docs.oracle.com/cd/B19306_01/server.102/b14220/memory.htm
+	
+	
+SQL.. Declarative Language
+	SELECT
+	DDL
+		CREATE
+		ALTER
+		
+		Some basic commands
+			Create TABLE Employee
+(ENO INT NOT NULL,
+ENAME VARCHAR(255) NOT NULL,
+DEPTNO INT NULL,
+SAL INT NOT NULL,
+MGR INT NULL,
+JOD DATE NOT NULL,
+PRIMARY KEY (ENO));
+
+
+CREATE table DEPT
+(DEPTNO INT NOT NULL,
+DNAME VARCHAR(255),
+PRIMARY KEY (DEPTNO));
+
+ALTER TABLE EMPLOYEE
+ADD CONSTRAINT FK_DEPT
+FOREIGN KEY (DEPTNO) REFERENCES DEPT(DEPTNO);
+
+
+DML
+		INSERT
+		UPDATE
+		DELETE
+
+SELECT * FROM EMPLOYEE, DEPT 
+WHERE EMPLOYEE.DEPTNO = DEPT.DEPTNO;
+
+INSERT INTO DEPT
+VALUES
+(10, "SERC");
+
+
+INSERT INTO EMPLOYEE
+(ENO, ENAME, DEPTNO, SAL, JOD)
+VALUES
+(1, 'LALIT', 10, 1000, '2016-01-01');
+
+
+UPDATE DEPT
+SET DNAME = 'SOFTWARE ENGINEERING RESEARCH CENTRE'
+WHERE DEPTNO = 10;
+
+
+INSERT INTO DEPT
+VALUES
+(20, "SERC");
+
+DELETE FROM DEPT
+WHERE DEPTNO = 20;
+
+	DCL
+
+DROP TABLE DEPT;
+DROP TABLE EMPLOYEE;
+	  DROP
+	  TRUNCATE
+	  GRANT/REVOKE
+COMMIT/ROLLBACK/CHECKPOINT/SAVEPOINT	  
+	Constraints
+		Primary Key/Foreign Key
+	Defaults.. Null 
+	Functions..Procedures
+		Rank
+Joins	
+Having..Group By
+Order By
+Rights and Roles..Users.. 
+Storage - 
+	Files - Index (B, B+, Hash, etc).. Block.. Extents..
+
+
+For further exploration
+************************
+	Data dictionary
+	Phantom..Deadlock	
+	Data replication - Cold, Warm, Hot
+		Recovery
+	Checkpoint/Save
+	ORM (You will come across this in Python as SQLAlchemy).. ProC, Pl/SQL
+	Optimization - rule based, cost based, ML
+	Web Application
+		Connection Pooling
+	Databases
+		Distributed Database
+		Datawarehouse
+		Spatial, NodeDB, Temporal
+		Unstructured Database - Web..Data Information Knowledge
+		MangoDB
+
+Books to read/follow on database
+	Navathe
+	CJ Date
+	India -- Jayanth Haristha
+	IIIT Hyd ---> Kamal / PK Reddy Vikram Pudi	
+	
